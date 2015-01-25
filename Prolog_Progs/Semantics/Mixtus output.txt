@@ -1,0 +1,333 @@
+1. ?- pe(test1(2,3,A)).
+test1(2, 3, A) :-
+        test121(A).
+
+% test121(A):-test1(2,3,A)
+test121(2).
+test121(0).
+test121(0).
+test121(0).
+true ?
+yes
+
+
+2. ?- pe(test2(2,3,A)).
+test2(2, 3, A) :-
+        test221(A).
+
+% test221(A):-test2(2,3,A)
+test221(5).
+test221(0).
+test221(2).
+test221(0).
+test221(3).
+test221(0).
+test221(0).
+test221(0).
+true ?
+yes
+
+
+
+3. ?- pe(test3(2,3,A)).
+test3(2, 3, A) :-
+        test321(A).
+
+% test321(A):-test3(2,3,A)
+test321(A) :-
+        program_evalpblockddeclarationddeclvarx1(A).
+
+% program_evalpblockddeclarationddeclvarx1(A):-program_eval(p(block(ddeclaration(ddeclvar(x),ddeclaration(ddeclvar(y),ddeclvar(z))),cassgn(z,eplus(ee(eassign(z,eplus(eid(x),enum(2)))),eid(y))))),2,3,A)
+program_evalpblockddeclarationddeclvarx1(7).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(4).
+program_evalpblockddeclarationddeclvarx1(7).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(4).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(4).
+program_evalpblockddeclarationddeclvarx1(4).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(5).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(2).
+program_evalpblockddeclarationddeclvarx1(5).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(2).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(2).
+program_evalpblockddeclarationddeclvarx1(2).
+program_evalpblockddeclarationddeclvarx1(0).
+true ?
+yes
+
+
+
+4. ?- pe(test4(2,3,A)).
+test4(2, 3, A) :-
+        test421(A).
+
+% test421(A):-test4(2,3,A)
+test421(0).
+test421(0).
+test421(0).
+test421(0).
+test421(0).
+test421(0).
+test421(1).
+test421(0).
+true ?
+yes
+
+
+5. ?- pe(test5(2,3,A)).
+test5(2, 3, A) :-
+        test521(A).
+
+% test521(A):-test5(2,3,A)
+test521(3).
+test521(0).
+test521(0).
+test521(0).
+test521(2).
+test521(0).
+test521(0).
+test521(0).
+true ?
+yes
+
+
+6. ?- pe(test6(2,3,A)).
+test6(2, 3, A) :-
+        test621(A).
+
+% test621(A):-test6(2,3,A)
+test621(A) :-
+        program_evalpblockddeclarationddeclvarx1(A).
+
+% program_evalpblockddeclarationddeclvarx1(A):-program_eval(p(block(ddeclaration(ddeclvar(x),ddeclaration(ddeclvar(y),ddeclvar(z))),cifcondn(bnot(bb(bequal(eid(x),eid(y)))),cassgn(z,eid(x)),cassgn(z,eid(y))))),2,3,A)
+program_evalpblockddeclarationddeclvarx1(2).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(2).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(2).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(3).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(0).
+program_evalpblockddeclarationddeclvarx1(0).
+true ?
+yes
+
+
+7. ?- pe(test7(2,3,A)).
+test7(2, 3, A) :-
+        test721(A).
+
+% test721(A):-test7(2,3,A)
+test721(A) :-
+        cevalcconditioncassgnz2(B),
+        cevalcwhilebnotbequaleidx1(B, C),
+        accessz2(C, A).
+test721(0).
+test721(0).
+
+% cevalcconditioncassgnz2(A):-ceval(ccondition(cassgn(z,eplus(eid(z),enum(1))),cassgn(x,eminus(eid(x),enum(1)))),[(x,2),(y,3),(z,0)],A)
+cevalcconditioncassgnz2([(x,1),(y,3),(z,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(x,1)]).
+cevalcconditioncassgnz2([(x,-1),(y,3),(z,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(x,-1)]).
+cevalcconditioncassgnz2([(x,1),(y,3),(z,0),(z,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(z,1),(x,1)]).
+cevalcconditioncassgnz2([(x,-1),(y,3),(z,0),(z,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(z,1),(x,-1)]).
+cevalcconditioncassgnz2([(x,1),(y,3),(z,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(x,1)]).
+cevalcconditioncassgnz2([(x,-1),(y,3),(z,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(x,-1)]).
+cevalcconditioncassgnz2([(x,1),(y,3),(z,0),(z,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(z,1),(x,1)]).
+cevalcconditioncassgnz2([(x,-1),(y,3),(z,0),(z,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(z,1),(x,-1)]).
+
+% cevalcwhilebnotbequaleidx1(A,B):-ceval(cwhile(bnot(bequal(eid(x),enum(0))),ccondition(cassgn(z,eplus(eid(z),enum(1))),cassgn(x,eminus(eid(x),enum(1))))),A,B)
+cevalcwhilebnotbequaleidx1(A, B) :-
+        accessx1(A, C),
+        (   C=0 ->
+            D=true
+        ;   D=false
+        ),
+        (   call(D) ->
+            E=false
+        ;   E=true
+        ),
+        (   call(E) ->
+            accessz1(A, F),
+            G is F+1,
+            updatez1(G, A, H),
+            accessx1(H, I),
+            J is I-1,
+            updatex1(J, H, K),
+            cevalcwhilebnotbequaleidx1(K, B)
+        ;   B=A
+        ).
+
+% accessx1(A,B):-access(x,A,B)
+accessx1([], 0).
+accessx1([(x,A)|_], A).
+accessx1([_|A], B) :-
+        accessx1(A, B).
+%Warning: Unbound variable found as a goal.
+%         Potentially all original code is needed.
+%Warning: Unbound variable found as a goal.
+%         Potentially all original code is needed.
+
+% accessz1(A,B):-access(z,A,B)
+accessz1([], 0).
+accessz1([(z,A)|_], A).
+accessz1([_|A], B) :-
+        accessz1(A, B).
+
+% updatez1(A,B,C):-update(z,A,B,C)
+updatez1(A, [], [(z,A)]).
+updatez1(A, [(z,_)|B], [(z,A)|B]).
+updatez1(A, [B|C], [B|D]) :-
+        updatez1(A, C, D).
+
+% updatex1(A,B,C):-update(x,A,B,C)
+updatex1(A, [], [(x,A)]).
+updatex1(A, [(x,_)|B], [(x,A)|B]).
+updatex1(A, [B|C], [B|D]) :-
+        updatex1(A, C, D).
+
+% accessz2(A,B):-access(z,A,B)
+accessz2([], 0).
+accessz2([(z,A)|_], A).
+accessz2([_|A], B) :-
+        accessz2(A, B).
+true ?
+yes
+
+
+
+8. ?- pe(test8(2,3,A)).
+test8(2, 3, A) :-
+        test821(A).
+
+% test821(A):-test8(2,3,A)
+test821(A) :-
+        cevalcconditioncassgnz2(B),
+        cevalcwhilebnotbequaleidw1(B, C),
+        accessz2(C, A).
+test821(1).
+test821(0).
+test821(1).
+test821(0).
+test821(1).
+test821(0).
+
+% cevalcconditioncassgnz2(A):-ceval(ccondition(cassgn(z,emul(eid(z),eid(y))),cassgn(w,eminus(eid(w),enum(1)))),[(x,2),(y,3),(z,1),(w,2)],A)
+cevalcconditioncassgnz2([(x,2),(y,3),(z,3),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,3),(w,2),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,3),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,3),(w,2),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,1),(z,3)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,2),(z,3),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,-1),(z,3)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,2),(z,3),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,2),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,2),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,1),(z,0)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,2),(z,0),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,-1),(z,0)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,2),(z,0),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,2),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,2),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,1),(z,0)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,2),(z,0),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,-1),(z,0)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,2),(z,0),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,2),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,0),(w,2),(w,-1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,1),(z,0)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,2),(z,0),(w,1)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,-1),(z,0)]).
+cevalcconditioncassgnz2([(x,2),(y,3),(z,1),(w,2),(z,0),(w,-1)]).
+
+% cevalcwhilebnotbequaleidw1(A,B):-ceval(cwhile(bnot(bequal(eid(w),enum(0))),ccondition(cassgn(z,emul(eid(z),eid(y))),cassgn(w,eminus(eid(w),enum(1))))),A,B)
+cevalcwhilebnotbequaleidw1(A, B) :-
+        accessw1(A, C),
+        (   C=0 ->
+            D=true
+        ;   D=false
+        ),
+        (   call(D) ->
+            E=false
+        ;   E=true
+        ),
+        (   call(E) ->
+            accessz1(A, F),
+            accessy1(A, G),
+            H is F*G,
+            updatez1(H, A, I),
+            accessw1(I, J),
+            K is J-1,
+            updatew1(K, I, L),
+            cevalcwhilebnotbequaleidw1(L, B)
+        ;   B=A
+        ).
+
+% accessw1(A,B):-access(w,A,B)
+accessw1([], 0).
+accessw1([(w,A)|_], A).
+accessw1([_|A], B) :-
+        accessw1(A, B).
+%Warning: Unbound variable found as a goal.
+%         Potentially all original code is needed.
+%Warning: Unbound variable found as a goal.
+%         Potentially all original code is needed.
+
+% accessz1(A,B):-access(z,A,B)
+accessz1([], 0).
+accessz1([(z,A)|_], A).
+accessz1([_|A], B) :-
+        accessz1(A, B).
+
+% accessy1(A,B):-access(y,A,B)
+accessy1([], 0).
+accessy1([(y,A)|_], A).
+accessy1([_|A], B) :-
+        accessy1(A, B).
+
+% updatez1(A,B,C):-update(z,A,B,C)
+updatez1(A, [], [(z,A)]).
+updatez1(A, [(z,_)|B], [(z,A)|B]).
+updatez1(A, [B|C], [B|D]) :-
+        updatez1(A, C, D).
+
+% updatew1(A,B,C):-update(w,A,B,C)
+updatew1(A, [], [(w,A)]).
+updatew1(A, [(w,_)|B], [(w,A)|B]).
+updatew1(A, [B|C], [B|D]) :-
+        updatew1(A, C, D).
+
+% accessz2(A,B):-access(z,A,B)
+accessz2([], 0).
+accessz2([(z,A)|_], A).
+accessz2([_|A], B) :-
+        accessz2(A, B).
+true ?
+yes
+
